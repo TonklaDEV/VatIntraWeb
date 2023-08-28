@@ -5,9 +5,9 @@ import { SharedModule } from '../../../shared/shared.module';
 import { ReportBusinessGoldAreaSub1Component } from '../../report/report-business-gold-area/components/report-business-gold-area-sub1/report-business-gold-area-sub1.component';
 import { ReportBusinessGoldAreaSub2Component } from '../../report/report-business-gold-area/components/report-business-gold-area-sub2/report-business-gold-area-sub2.component';
 import { ReportBusinessGoldAreaComponent } from '../../report/report-business-gold-area/report-business-gold-area.component';
-//import { ReportBusinessGoldReceiveSub1Component } from '../../report/report-business-gold-receive/components/report-business-gold-receive-sub1/report-business-gold-receive-sub1.component';
-//import { ReportBusinessGoldReceiveSub2Component } from '../../report/report-business-gold-receive/components/report-business-gold-receive-sub2/report-business-gold-receive-sub2.component';
-//import { ReportBusinessGoldReceiveComponent } from '../../report/report-business-gold-receive/report-business-gold-receive.component';
+import { ReportBusinessGoldReceiveSub1Component } from '../../report/report-business-gold-receive/components/report-business-gold-receive-sub1/report-business-gold-receive-sub1.component';
+import { ReportBusinessGoldReceiveSub2Component } from '../../report/report-business-gold-receive/components/report-business-gold-receive-sub2/report-business-gold-receive-sub2.component';
+import { ReportBusinessGoldReceiveComponent } from '../../report/report-business-gold-receive/report-business-gold-receive.component';
 //import { ReportBusinessNotApproveSub1Component } from '../../report/report-business-not-approve/components/report-business-not-approve-sub1/report-business-not-approve-sub1.component';
 //import { ReportBusinessNotApproveSub2Component } from '../../report/report-business-not-approve/components/report-business-not-approve-sub2/report-business-not-approve-sub2.component';
 //import { SearchReportBusinessNotApproveComponent } from '../../report/report-business-not-approve/components/search-report-business-not-approve/search-report-business-not-approve.component';
@@ -16,9 +16,9 @@ import { ReportBusinessGoldAreaComponent } from '../../report/report-business-go
 //import { ReportBusinessNotTransferSub2Component } from '../../report/report-business-not-transfer/components/report-business-not-transfer-sub2/report-business-not-transfer-sub2.component';
 //import { SearchReportBusinessNotTransferComponent } from '../../report/report-business-not-transfer/components/search-report-business-not-transfer/search-report-business-not-transfer.component';
 //import { ReportBusinessNotTransferComponent } from '../../report/report-business-not-transfer/report-business-not-transfer.component';
-//import { ReportBusinessNotificationAreaSub1Component } from '../../report/report-business-notification-area/components/report-business-notification-area-sub1/report-business-notification-area-sub1.component';
-//import { ReportBusinessNotificationAreaSub2Component } from '../../report/report-business-notification-area/components/report-business-notification-area-sub2/report-business-notification-area-sub2.component';
-//import { ReportBusinessNotificationAreaComponent } from '../../report/report-business-notification-area/report-business-notification-area.component';
+import { ReportBusinessNotificationAreaSub1Component } from '../../report/report-business-notification-area/components/report-business-notification-area-sub1/report-business-notification-area-sub1.component';
+import { ReportBusinessNotificationAreaSub2Component } from '../../report/report-business-notification-area/components/report-business-notification-area-sub2/report-business-notification-area-sub2.component';
+import { ReportBusinessNotificationAreaComponent } from '../../report/report-business-notification-area/report-business-notification-area.component';
 //import { ReportBusinessUserRemoveSub1Component } from '../../report/report-business-user-remove/report-business-user-remove-sub1/report-business-user-remove-sub1.component';
 //import { ReportBusinessUserRemoveSub2Component } from '../../report/report-business-user-remove/report-business-user-remove-sub2/report-business-user-remove-sub2.component';
 //import { ReportBusinessUserRemoveComponent } from '../../report/report-business-user-remove/report-business-user-remove.component';
@@ -57,15 +57,15 @@ const routes: Routes = [
         ]
       },
       {
-        path:'user-group',
-        component:UserGroupComponent,
+        path: 'user-group',
+        component: UserGroupComponent,
         children:
-        [
-          {
-            path:'pp013-entry-program',
-            component:Pp013EntryProgramComponent,
-          }
-        ]
+          [
+            {
+              path: 'pp013-entry-program',
+              component: Pp013EntryProgramComponent,
+            }
+          ]
       }
 
     ]
@@ -91,64 +91,64 @@ const routes: Routes = [
       },
       {
         path: 'report-business-gold-receive',
-        //component: ReportBusinessGoldReceiveComponent,
+        component: ReportBusinessGoldReceiveComponent,
         children: [
           {
             path: 'page-one',
-           // component: ReportBusinessGoldReceiveSub1Component
+            component: ReportBusinessGoldReceiveSub1Component
           },
           {
             path: 'page-two',
-           // component: ReportBusinessGoldReceiveSub2Component
+            component: ReportBusinessGoldReceiveSub2Component
           },
 
         ],
       },
       {
         path: 'report-business-notification-area',
-        //component: ReportBusinessNotificationAreaComponent,
+        component: ReportBusinessNotificationAreaComponent,
         children: [
           {
             path: 'page-one',
-           // component: ReportBusinessNotificationAreaSub1Component
+            component: ReportBusinessNotificationAreaSub1Component
           },
           {
             path: 'page-two',
-           // component: ReportBusinessNotificationAreaSub2Component
+            component: ReportBusinessNotificationAreaSub2Component
           },
 
         ],
       },
       {
         path: 'report-business-user-remove',
-       // component: ReportBusinessUserRemoveComponent,
+        // component: ReportBusinessUserRemoveComponent,
         children: [
           {
             path: 'page-one',
-         //   component: ReportBusinessUserRemoveSub1Component
+            //   component: ReportBusinessUserRemoveSub1Component
           },
           {
             path: 'page-two',
-          //  component: ReportBusinessUserRemoveSub2Component
+            //  component: ReportBusinessUserRemoveSub2Component
           },
 
         ],
       },
       {
         path: 'report-business-not-transfer',
-       // component: ReportBusinessNotTransferComponent,
+        // component: ReportBusinessNotTransferComponent,
         children: [
           {
             path: 'search',
-         //   component: SearchReportBusinessNotTransferComponent,
+            //   component: SearchReportBusinessNotTransferComponent,
           },
           {
             path: 'page-one',
-          //  component: ReportBusinessNotTransferSub1Component,
+            //  component: ReportBusinessNotTransferSub1Component,
 
           }, {
             path: 'page-two',
-           // component: ReportBusinessNotTransferSub2Component,
+            // component: ReportBusinessNotTransferSub2Component,
           }
         ]
 
@@ -167,7 +167,7 @@ const routes: Routes = [
 
           }, {
             path: 'page-two',
-           // component: ReportBusinessNotApproveSub2Component,
+            // component: ReportBusinessNotApproveSub2Component,
           }
         ]
 
