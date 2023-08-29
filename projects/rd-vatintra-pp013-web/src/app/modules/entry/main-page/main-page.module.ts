@@ -9,8 +9,8 @@ import { ReportBusinessGoldAreaComponent } from '../../report/report-business-go
 import { ReportBusinessGoldReceiveComponent } from '../../report/report-business-gold-receive/report-business-gold-receive.component';
 import { ReportBusinessUserRemoveComponent } from '../../report/report-business-user-remove/report-business-user-remove.component';
 import { ReportBusinessNotificationAreaComponent } from '../../report/report-business-notification-area/report-business-notification-area.component';
-//import { ReportBusinessNotApproveComponent } from '../../report/report-business-not-approve/report-business-not-approve.component';
-//import { ReportGoldVatApproveComponent } from '../../report/report-gold-vat-approve/report-gold-vat-approve.component';
+import { ReportBusinessNotApproveComponent } from '../../report/report-business-not-approve/report-business-not-approve.component';
+import { ReportGoldVatApproveComponent } from '../../report/report-gold-vat-approve/report-gold-vat-approve.component';
 import { ReportBusinessNotTransferComponent } from '../../report/report-business-not-transfer/report-business-not-transfer.component';
 import { UserComponent } from '../user/user.component';
 import { UserGroupComponent } from '../user-group/user-group.component';
@@ -24,8 +24,8 @@ import { Pp013EntryProgramComponent } from '../user-group/components/pp013-entry
     ReportBusinessNotificationAreaComponent,
     ReportBusinessUserRemoveComponent,
     ReportBusinessNotTransferComponent,
-    //ReportBusinessNotApproveComponent,
-    //ReportGoldVatApproveComponent,
+    ReportBusinessNotApproveComponent,
+    ReportGoldVatApproveComponent,
     UserComponent,
     UserGroupComponent,
     Pp013EntryProgramComponent,
