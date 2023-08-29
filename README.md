@@ -35,7 +35,7 @@ ng build rd-vatsbtintra-lib && ng serve rd-vatsbtde-dln-web
 
 หรือ สร้าง script ที่ rd-vatsbtde-web/package.json แล้ว รัน โปรแกรม ผ่าน script
 ```
-npm run start-dln
+npm run start-pp013
 ```
 
 5. setup config css, asset  แก้ไข ไฟล์  rd-vatsbtde-web/package.json แก้ไข ตรง assets ของแต่ล่ะ โปรเจ็ค ให้เพิ่ม
@@ -111,3 +111,8 @@ ng build rd-vatsbtintra-dashboard-web --base-href=/rd-vatsbtintra-dashboard-web/
 
 ```
 # Vatintra-web
+## Project: rd-vatintra-pp013-web
+เปิด project ด้วยคำสั่ง
+```
+npm run start-pp013
+```
