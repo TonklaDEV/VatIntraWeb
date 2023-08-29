@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-report-business-user-remove-sub1',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportBusinessUserRemoveSub1Component implements OnInit {
 
-  constructor() { }
+  setPage(){
+    this.router.navigate(['/main/report/report-business-user-remove/page-two'])
+  }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
